@@ -9,7 +9,7 @@
 	<link rel="apple-touch-icon" href="icon.png" />
 	<link rel="preload" href="audio-worklet.js" as="script" />
 	<link href="dark.css" rel="stylesheet" />
-	<title>DS Player</title>
+	<title>nds</title>
 	<style>
           body {
 	        overflow-x: hidden;
@@ -231,25 +231,15 @@
 <body>
 	<div id="welcome" class="menu">
 		<button class="button" style="float: right; margin-top: 5px; margin-right: 20px; height: 50px;" onclick="uiSwitchTo('menu')">⚙ Settings...</button>
-		<h1 style="margin-top: 25px; margin-left: 20px;">DS Player</h1>
+		<h1 style="margin-top: 25px; margin-left: 20px;">nds</h1>
 		<div style="margin-left: 20px;" id="loading">Loading...</div>
 		<div id="loadrom" hidden>
 			<input id="rom" type="file" hidden />
 			<button style="width: calc(100% - 2em); margin: 1em" id="btn-choose-file">Choose File (or
 				drag/drop)...</button><br />
 		</div>
-		<p style="color: #e7e7e7; margin-left: 15px;">
-			This software should not be used to play games you have not legally obtained. In no way is this site associated with any of the vendors of the original game software and hardware.
-			<br />
-		</p>
 		<hr />
 		<div id="pro" style="background-color: #333"></div>
-		<div id="ios-hint" hidden style="margin-left: 14px; bottom: 7px;">
-			⬇ Due to iOS Safari limitations, you have to add this page to your <b>Home Screen</b> in order to save your game progress. ⬇
-		</div>
-		<div id="mac-warning" hidden>
-			WARNING:<br />It looks like you are using macOS.<br />Due to macOS Safari <a href="https://webkit.org/tracking-prevention/">limitations</a>, ALL of you save data will be LOST after 7 days of inactivity.<br />For this reason, it is highly recommended to use a different browser. (For example: <a href="https://www.google.com/chrome/">Chrome</a>)
-		</div>
 	</div>
 	</div>
 	<div id="vk-layer" hidden>
@@ -290,12 +280,7 @@
                   <option value="lr">L:R (Left:Right)</option>
 		  <option value="lbr">LB:R (LeftBig:Right)</option>
 		</select>
-                <hr />
-
-		<div style="position: fixed; bottom: 0; left: 0; padding: 10px;">
-                  <a href="/vba" style="font-size: 12px;">GBA Player</a>
-                </div>
-		
+                <hr />	
                 <div style="position: fixed; bottom: 0; right: 0; padding: 10px;">
                   <span style="font-size: 12px;">Version 0.1 | </span> <a onclick="whatsNew()" href="#" style="font-size: 12px;">What's New</a>
                 </div>
