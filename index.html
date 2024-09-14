@@ -260,25 +260,25 @@
 		<p id="msg-text"></p>
 	</div>
 	<div id="menu" hidden>
-		<button id="back-menu" style="margin-top: 5px; margin-right: 5px;" onclick="uiMenuBack()">❮ Back</button> <button style="margin-top: 5px; margin-right: 5px;" onclick="runFunctions()">Enter Fullscreen</button>
+		<button id="back-menu" style="margin-top: 5px; margin-right: 5px;" onclick="uiMenuBack()">❮ 戻る</button> <button style="margin-top: 5px; margin-right: 5px;" onclick="runFunctions()">全画面に戻る</button>
 		<hr />
-		<label for="canvas-fullscreen" style="margin-left: 7px;">Fullscreen Selection:</label>
+		<label for="canvas-fullscreen" style="margin-left: 7px;">フルスクリーン設定:</label>
 		<select id="canvas-fullscreen" class="select">
-                  <option value="top">Top Canvas</option>
-                  <option value="bottom">Bottom Canvas</option>
+                  <option value="top">最上段(デフォルト)</option>
+                  <option value="bottom">中段</option>
 		</select>
 		<hr />
 		<input type="checkbox" id="cfg-opt" style="margin-left: 7px;">
-                <label for="cfg-opt">Experimental optimization</label><br>
+                <label for="cfg-opt">実験的最適化</label><br>
                 <input type="checkbox" id="power-save" style="margin-left: 7px;" />
-                <label for="power-save">Power-save</label><br />
+                <label for="power-save">低電力モード</label><br />
                 <input type="checkbox" id="vk-enabled" style="margin-left: 7px;" />
-                <label for="vk-enabled">Virtual keyboard</label><br />
-                <label for="screen-layout" style="margin-left: 7px;">Screen Layout:</label>
+                <label for="vk-enabled">画面内仮想キーボード(非推奨)</label><br />
+                <label for="screen-layout" style="margin-left: 7px;">画面構成:</label>
                 <select id="screen-layout" class="select">
-                  <option value="tb">T:B (Top:Bottom)</option>
-                  <option value="lr">L:R (Left:Right)</option>
-		  <option value="lbr">LB:R (LeftBig:Right)</option>
+                  <option value="tb">T:B (デフォルト)</option>
+                  <option value="lr">L:R (非推奨)</option>
+		  <option value="lbr">LB:R (非推奨)</option>
 		</select>
                 <hr />	
                 <div style="position: fixed; bottom: 0; right: 0; padding: 10px;">
@@ -287,8 +287,8 @@
 
 		<div style="margin-left: 7px;" id="menu-savegame" hidden>
 			<input type="file" id="restore-file" onchange="uiSaveRestore()" hidden />
-			Save Data: <button onclick="uiSaveBackup()">↓ Export</button>  <button onclick="$id('restore-file').click()">
-				↑ Import
+			バックアップ: <button onclick="uiSaveBackup()">↓ バックアップを出力</button>  <button onclick="$id('restore-file').click()">
+				↑ バックアップから復元
 			</button>
 			<hr />
 		</div>
