@@ -25,7 +25,7 @@ loadConfig()
 
 function uiSaveConfig() {
     config.powerSave = !!($id('power-save').checked)
-    config.vkEnabled = !!($id('vk-enabled'))
+    config.vkEnabled = !!($id('vk-enabled').checked)
     config.cfgOpt = !!($id('cfg-opt').checked)
     window.localStorage['config'] = JSON.stringify(config)
 }
@@ -91,7 +91,7 @@ async function uiSaveRestore() {
     localforage.setItem('sav-' + gameID, u8).then(() => {
         alert('Save data updated. \nThis page will be reloaded to apply the changes.')
         setTimeout(() => {
-            location.href = 'https://majesticwafer.github.io/dsp/'
+            location.href = 'https://chitoseog.github.io/dsp/'
         }, 1000)
     })
 }
