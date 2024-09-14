@@ -20,8 +20,8 @@
         }
 
         body {
-	        background-color: black;
-	        color: white;
+	        background-color: white;
+	        color: black;
 	        padding: 0;
 	        margin: 0;
 	        width: 100vw;
@@ -230,20 +230,19 @@
 
 <body>
 	<div id="welcome" class="menu">
-		<button class="button" style="float: right; margin-top: 5px; margin-right: 20px; height: 50px;" onclick="uiSwitchTo('menu')">⚙ Settings...</button>
+		<button class="button" style="float: right; margin-top: 5px; margin-right: 20px; height: 50px;" onclick="uiSwitchTo('menu')">設定</button>
 		<h1 style="margin-top: 25px; margin-left: 20px;">nds</h1>
-		<div style="margin-left: 20px;" id="loading">Loading...</div>
+		<div style="margin-left: 20px;" id="loading">ロード中</div>
 		<div id="loadrom" hidden>
 			<input id="rom" type="file" hidden />
-			<button style="width: calc(100% - 2em); margin: 1em" id="btn-choose-file">Choose File (or
-				drag/drop)...</button><br />
+			<button style="width: calc(100% - 2em); margin: 1em" id="btn-choose-file">ROMファイルを選択</button><br />
 		</div>
 		<hr />
 		<div id="pro" style="background-color: #333"></div>
 	</div>
 	</div>
 	<div id="vk-layer" hidden>
-		<div class="vk-rectangle vk" data-k="menu" id="vk-menu">𝗠𝗲𝗻𝘂</div>
+		<div class="vk-rectangle vk" data-k="menu" id="vk-menu">メニュー</div>
 		<div class="vk-trig vk" data-k="l">𝗟</div>
 		<div class="vk-trig vk" data-k="r">𝗥</div>
 		<div class="vk-round vk" data-k="a">𝗔</div>
@@ -253,7 +252,7 @@
 		<div class="vk-square vk" data-k="select">-</div>
 		<div class="vk-square vk" data-k="start">+</div>
                 <div class="vk-round vk" data-k="stick" id="vk-stick"></div>
-		<div class="vk-rectangle vk" data-k="mic">𝗠𝗶𝗰</div>
+		<div class="vk-rectangle vk" data-k="mic">マイク</div>
 	</div>
 	<div style="z-index: 2; position: absolute; bottom: 7px; right: 7px;" id="fps"></div>
 	<div id="msg-layer" hidden>
