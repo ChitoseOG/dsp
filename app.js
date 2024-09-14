@@ -25,7 +25,7 @@ loadConfig()
 
 function uiSaveConfig() {
     config.powerSave = !!($id('power-save').checked)
-    config.vkEnabled = !!($id('vk-enabled').checked)
+    config.vkEnabled = !!($id('vk-enabled'))
     config.cfgOpt = !!($id('cfg-opt').checked)
     window.localStorage['config'] = JSON.stringify(config)
 }
